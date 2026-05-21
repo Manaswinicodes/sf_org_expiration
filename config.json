@@ -1,0 +1,27 @@
+{
+  "orgs": [
+    {
+      "alias": "MyProductionOrg",
+      "auth_method": "password",
+      "username": "your.email@example.com",
+      "password": "YourSalesforcePassword",
+      "security_token": "YourSecurityTokenHere",
+      "instance_url": "https://login.salesforce.com",
+      "is_sandbox": false
+    },
+    {
+      "alias": "MySandboxOrg",
+      "auth_method": "password",
+      "username": "your.email@example.com.mysandboxname",
+      "password": "YourSalesforcePassword",
+      "security_token": "YourSecurityTokenHere",
+      "instance_url": "https://test.salesforce.com",
+      "is_sandbox": true
+    }
+  ],
+  "settings": {
+    "expiring_soon_days": 30,
+    "output_file": "org_expiration_report.csv",
+    "log_level": "INFO"
+  }
+}
